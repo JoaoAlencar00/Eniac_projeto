@@ -1,0 +1,82 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    border-top: 1px solid #ddd;
+    gap: 20px;
+  }
+  
+  .qrcode-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #cfe2ff;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f5faff;
+    max-width: 160px;
+  }
+  
+  .qrcode-box img {
+    width: 120px;
+    height: auto;
+  }
+
+  
+  .info-text {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+  }
+  
+  .info-text em {
+    font-style: italic;
+  }
+  
+  .info-text a {
+    color: #9def48;
+    text-decoration: none;
+  }
+  
+  .info-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .links {
+    text-align: right;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .links a {
+    font-weight: bold;
+    color: #0d0d0d;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+ 
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .info-text {
+      max-width: 100%;
+    }
+  
+    .links {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
